@@ -1,0 +1,1 @@
+{ "desc": "启晨教育页面索引", "rules": [{ "action": "allow", "page": "*" }] }

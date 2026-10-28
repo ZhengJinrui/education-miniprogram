@@ -1,0 +1,2 @@
+.logout-button{margin:48rpx 0 20rpx;background:#fff!important;color:#c94f46!important;border:1rpx solid #f0d3d0;border-radius:15rpx;font-size:26rpx}.logout-button::after{border:0}
+.guest-card{margin-top:30rpx;text-align:center}.guest-card .muted{margin:18rpx 0 28rpx;line-height:1.7}.guest-card .primary{width:100%}

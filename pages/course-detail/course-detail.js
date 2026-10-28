@@ -1,0 +1,1 @@
+Page({data:{name:'课程详情'},onLoad(o){this.setData({name:decodeURIComponent(o.name||'课程详情')})},onBuy(){wx.showModal({title:'报名确认',content:'报名信息已生成，支付功能接入后即可完成购买。',confirmText:'确认'})},onTeacher(){wx.showModal({title:'教师介绍',content:'拥有多年教学经验，曾获启晨教育年度优秀教师、学员进步指导奖。',showCancel:false})}})

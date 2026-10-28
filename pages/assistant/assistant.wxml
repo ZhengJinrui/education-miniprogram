@@ -1,0 +1,10 @@
+<view class="assistant-page">
+  <view class="assistant-head"><view class="ai-orb">✦</view><view><text class="assistant-name">小启助手</text><text class="assistant-status">● DeepSeek 在线服务</text></view></view>
+  <scroll-view scroll-y class="chat" scroll-into-view="{{scrollIntoView}}">
+    <block wx:for="{{messages}}" wx:key="index"><view id="message-{{index}}" class="message-row {{item.role}}"><view class="bubble">{{item.text}}</view></view></block>
+    <view wx:if="{{loading}}" class="message-row ai"><view class="bubble typing">小启正在思考…</view></view>
+  </scroll-view>
+  <scroll-view scroll-x class="quick-list"><view class="quick-inner"><button wx:for="{{quickQuestions}}" wx:key="*this" data-question="{{item}}" bindtap="onQuick">{{item}}</button></view></scroll-view>
+  <view class="composer"><textarea value="{{input}}" placeholder="请输入学习问题…" auto-height maxlength="2000" bindinput="onInput"></textarea><button loading="{{loading}}" disabled="{{loading}}" bindtap="onSend">发送</button></view>
+  <text class="ai-notice">AI 回答仅供学习参考，请勿输入个人敏感信息</text>
+</view>

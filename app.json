@@ -1,0 +1,14 @@
+{
+  "pages": ["pages/login/login", "pages/profile-setup/profile-setup", "pages/home/home", "pages/courses/courses", "pages/practice/practice", "pages/profile/profile", "pages/course-detail/course-detail", "pages/leave/leave", "pages/assistant/assistant", "pages/agreement/agreement", "pages/privacy/privacy"],
+  "window": { "navigationBarTitleText": "启晨教育", "navigationBarBackgroundColor": "#f7f9f5", "navigationBarTextStyle": "black", "backgroundColor": "#f7f9f5" },
+  "tabBar": {
+    "color": "#8b9a93", "selectedColor": "#255e4f", "backgroundColor": "#ffffff",
+    "list": [
+      { "pagePath": "pages/home/home", "text": "首页" },
+      { "pagePath": "pages/courses/courses", "text": "课程" },
+      { "pagePath": "pages/practice/practice", "text": "同步学练" },
+      { "pagePath": "pages/profile/profile", "text": "我的" }
+    ]
+  },
+  "style": "v2", "sitemapLocation": "sitemap.json"
+}
